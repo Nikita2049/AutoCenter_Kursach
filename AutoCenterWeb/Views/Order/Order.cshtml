@@ -1,0 +1,52 @@
+﻿@model ReportModel
+@{ ViewData["Title"] = "Заказы"; }
+
+<div class="text-center text-info">
+    <h1>Заказы</h1>
+</div>
+<hr />
+<p> <strong> <a class="btn btn-info btn-sm" asp-area="" asp-controller="order" asp-action="CreateOrder">Оформить заказ</a></strong></p>
+<hr />
+@using (Html.BeginForm())
+{
+    <p>
+        <button type="submit" class="btn btn-info btn-sm">Получить отчет по заказам на почту в формате PDF</button>
+    </p>
+}
+<hr />
+@foreach (var order in ViewBag.orders)
+{
+    <p><strong>Заказ @order.Id </strong></p>
+    <p>Дата создания: @order.DateCreate</p>
+    @if (@order.Status == Logic.Enums.OrderStatus.Оплачен)
+    {
+        <p>Дата завершения заказа: @order.DateImplement</p>
+    }
+    <p>Статус: @order.Status</p>
+    <p>Цена: @order.Price</p>
+    <table class="table">
+        <tr>
+            <td>Автомобиль</td>
+            <td>Год выпуска</td>
+            <td>Цена</td>
+            <td>Количество</td>
+        </tr>
+        @foreach (var car in order.OrderCars)
+        {
+            <tr>
+                <td>@car.CarName</td>
+                <td>@car.Year</td>
+                <td>@car.Price</td>
+                <td>@car.Count</td>
+            </tr>
+        }
+    </table>
+
+    <p>
+        <a href="/Order/SendWordReport/@order.Id">Отправить список автомобилей в формате .docx</a>
+    </p>
+    <p>
+        <a href="/Order/SendExcelReport/@order.Id">Отправить список автомобилей в формате .xslx</a>
+    </p>
+    <hr />
+}

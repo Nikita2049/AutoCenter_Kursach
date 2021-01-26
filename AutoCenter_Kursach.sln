@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCenterView", "AutoCenterView\AutoCenterView.csproj", "{1C49355F-5DCC-45F0-8F38-D18387CDA85E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCenterBusinessLogic", "AutoCenterBusinessLogic\AutoCenterBusinessLogic.csproj", "{9E747A77-A367-43C0-B158-F9ECF6EE4D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCenterDatabaseImplement", "AutoCenterDatabaseImplement\AutoCenterDatabaseImplement.csproj", "{31AE9126-63A2-4960-99B6-A8CBCAEF117C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoCenterWeb", "AutoCenterWeb\AutoCenterWeb.csproj", "{D8D73472-F25C-4137-A411-05CD02B8A244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C49355F-5DCC-45F0-8F38-D18387CDA85E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C49355F-5DCC-45F0-8F38-D18387CDA85E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C49355F-5DCC-45F0-8F38-D18387CDA85E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C49355F-5DCC-45F0-8F38-D18387CDA85E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E747A77-A367-43C0-B158-F9ECF6EE4D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E747A77-A367-43C0-B158-F9ECF6EE4D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E747A77-A367-43C0-B158-F9ECF6EE4D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E747A77-A367-43C0-B158-F9ECF6EE4D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AE9126-63A2-4960-99B6-A8CBCAEF117C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AE9126-63A2-4960-99B6-A8CBCAEF117C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AE9126-63A2-4960-99B6-A8CBCAEF117C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AE9126-63A2-4960-99B6-A8CBCAEF117C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D73472-F25C-4137-A411-05CD02B8A244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D73472-F25C-4137-A411-05CD02B8A244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D73472-F25C-4137-A411-05CD02B8A244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D73472-F25C-4137-A411-05CD02B8A244}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5DE168A-FE88-4F94-BFFC-ABFF02B708BB}
+	EndGlobalSection
+EndGlobal

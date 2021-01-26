@@ -1,0 +1,29 @@
+﻿@model AutoCenterWeb.Models.CreateOrderModel
+
+@{ ViewData["Title"] = "Сделать заказ";
+}
+<div class="text-center text-info">
+    <h1>@ViewData["Title"]</h1>
+</div>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "", new { @style = "color: pink" })
+    <table class="table">
+        <tr>
+            <td>Автомобиль</td>
+            <td>Год выпуска</td>
+            <td>Цена</td>
+            <td>Количество</td>
+            @foreach (Logic.ViewModel.CarViewModel car in ViewBag.OrderCars)
+            {
+            <tr>
+                <td>@car.CarName</td>
+                <td>@car.Year</td>
+                <td>@car.FullPrice</td>
+                <td><input type="number" name="Model.OrderCars[@car.Id]" value="0" min="0" /></td>
+            </tr>
+}
+        </table>
+        <button type="submit" class="btn btn-info btn-sm">Создать</button>
+    }
