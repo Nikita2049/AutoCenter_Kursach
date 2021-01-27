@@ -30,14 +30,14 @@ namespace AutoCenterView
 
             foreach (var car in list)
             {
-                int countSpare = 0;
-                var Spares = car.CarSpares.Values;
-                foreach (var Spare in Spares)
+                int countDetail = 0;
+                var details = car.CarSpares.Values;
+                foreach (var detail in details)
                 {
-                    countSpare += Spare.Item3;
+                    countDetail += detail.Item3;
                 }
 
-                this.chart1.Series["Цена деталей"].Points.AddXY(car.CarName, countSpare);
+                this.chart1.Series["Цена деталей"].Points.AddXY(car.CarName, countDetail);
             }
         }
     }

@@ -7,8 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoCenterWeb.Models;
 using System.Threading.Tasks;
-using Logic.ViewModel;
-using Logic.Enums;
+using AutoCenterBusinessLogic.ViewModel;
+using AutoCenterBusinessLogic.Enums;
 using AutoCenterDatabaseImplement;
 using AutoCenterDatabaseImplement.Implements;
 
@@ -127,7 +127,7 @@ namespace AutoCenterWeb.Controllers
                 {
                     ClientId = Program.Client.Id,
                     DateCreate = DateTime.Now,
-                    Status = OrderStatus.Ожидает_поставки_деталей,
+                    Status = OrderStatus.Ожидает_поставки_запчастей,
                     Price = CalculateSum(orderCars),
                     OrderCars = orderCars
                 });
